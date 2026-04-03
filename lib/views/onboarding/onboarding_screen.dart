@@ -95,7 +95,6 @@ class OnboardingScreen extends StatelessWidget {
   }
 
   Widget _buildFooterText(int page) {
-    String step = "STEP 0${page + 1} / 03";
     String label = "";
     if (page == 0) label = "Identity Verification";
     if (page == 1) label = "Security Module";
