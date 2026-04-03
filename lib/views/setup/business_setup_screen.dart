@@ -385,9 +385,10 @@ class _MapPreview extends StatelessWidget {
       child: Stack(
         alignment: Alignment.center,
         children: [
-          CustomPaint(
-            painter: _GridPainter(),
-            size: const Size(double.infinity, 110),
+          SizedBox.expand(
+            child: CustomPaint(
+              painter: _GridPainter(),
+            ),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
